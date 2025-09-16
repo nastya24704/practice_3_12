@@ -1,11 +1,3 @@
-def secret_number():
-    while True:
-        num = input("Ведущий, введите четырехзначное число с неповторяющимися цифрами: ")
-        if len(num) == 4 and len(set(num)) == 4:
-            return num
-        print("Ошибка! Число должно быть четырехзначным с неповторяющимися цифрами.")
-
-
 def all_bulls_cows(secret, guess):
     bulls = cows = 0
     for i in range(4):
@@ -35,6 +27,7 @@ def play_game():
         print(f"Быков: {bulls} Коров: {cows}")
 
     print(f"Проигрыш! Загаданное число было: {secret}")
+num=input()
 
 
 play_game()
