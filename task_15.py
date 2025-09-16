@@ -9,7 +9,6 @@ def all_bulls_cows(secret, guess):
 
 
 def play_game():
-    secret = num
     print("\n" * 25)
     attempts = 10
     print("Игра началась! Отгадайте число за 10 попыток.")
@@ -20,13 +19,13 @@ def play_game():
                 break
             print("Введите четырехзначное число с неповторяющимися цифрами.")
 
-        if guess == secret:
+        if guess == num:
             print("Победа!")
             return
-        bulls, cows = all_bulls_cows(secret, guess)
+        bulls, cows = all_bulls_cows(num, guess)
         print(f"Быков: {bulls} Коров: {cows}")
 
-    print(f"Загаданное число было: {secret}")
+    print(f"Загаданное число было: {num}")
 
 
 num=input()
