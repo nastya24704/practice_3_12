@@ -26,8 +26,8 @@ def play_game():
         bulls, cows = all_bulls_cows(secret, guess)
         print(f"Быков: {bulls} Коров: {cows}")
 
-    print(f"Проигрыш! Загаданное число было: {secret}")
+    print(f"Загаданное число было: {secret}")
+
+
 num=input()
-
-
 play_game()
