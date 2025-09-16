@@ -9,7 +9,7 @@ def all_bulls_cows(secret, guess):
 
 
 def play_game():
-    secret = secret_number()
+    secret = num
     print("\n" * 25)
     attempts = 10
     print("Игра началась! Отгадайте число за 10 попыток.")
